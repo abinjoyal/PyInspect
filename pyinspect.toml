@@ -1,0 +1,35 @@
+[project]
+name = "PyInspect"
+version = "0.1.0"
+
+[scanner]
+exclude = [
+    ".git",
+    "venv",
+    ".venv",
+    "__pycache__",
+    "node_modules",
+    ".env",
+    "build",
+    "dist",
+    ".pytest_cache",
+    ".idea",
+    ".vscode"
+]
+max_file_size_mb = 500
+calculate_hashes = true
+
+[memory]
+snapshot_interval = 2
+max_snapshots = 50
+
+[logs]
+max_file_size_bytes = 100000000
+log_patterns = [
+    '(?P<timestamp>\\d{4}-\\d{2}-\\d{2}\\s+\\d{2}:\\d{2}:\\d{2})\\s+(?P<level>INFO|WARNING|ERROR|CRITICAL|DEBUG)\\s+(?P<message>.*)',
+    '\\[(?P<timestamp>.*?)\\]\\s+\\[(?P<level>.*?)\\]\\s+(?P<message>.*)'
+]
+
+[reports]
+output_directory = "reports"
+default_format = "html"
