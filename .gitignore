@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment & Secrets (High Security)
+.env
+.env.*
+*.env
+*.pem
+*.key
+secrets.json
+
+# Local Databases & Dynamic Storage
+*.db
+*.sqlite
+*.sqlite3
+pyinspect.db
+
+# Generated Diagnostic Reports & Output Logs
+reports/*.html
+reports/*.json
+reports/*.csv
+sample_projects/**/reports/
+*.log
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv/
+
+# OS Specific Junk Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+ehthumbs.db
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Unit Test & Cache
+.pytest_cache/
+.coverage
+htmlcov/
