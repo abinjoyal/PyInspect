@@ -12,7 +12,7 @@
 - **Project & Storage Size Analyzer**: Traverses project workspace, computes file distributions, detects bulk files and duplicate content via SHA256 hashes.
 - **Code Behavior Visualizer**: Dynamic execution tracer capturing call trees, line step execution, function durations, and variable state mutations.
 - **Memory Leak Profiler**: Tracks process RSS memory and heap allocations via `tracemalloc`, compares differential snapshots, and flags suspicious memory growth.
-- **Log Anomaly Detector**: Multi-format streaming parser for raw and JSON logs, clustering recurring error signatures (HTTP 500s, DB timeouts, exceptions).
+- **Log Anomaly Detector**: Multi-format streaming parser for raw and JSON logs, clustering recurring error signatures.
 - **Unified Health Score Engine**: Objectively evaluates project health (0–100) and stores historical runs in SQLite for comparison.
 - **Standalone Reports & Desktop GUI**: Features a modern PySide6 dark theme desktop dashboard and exports HTML, JSON, and CSV reports.
 
